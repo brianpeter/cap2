@@ -1,0 +1,106 @@
+/*----------------universal----------------------*/
+
+/*desktop*/
+html {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+}
+
+.content.left {
+  text-align: left;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+h2,
+h3{
+  font-weight: bold;
+}
+
+
+/*mobile*/
+
+/*-----------------*header*-----------------------*/
+
+/*desktop*/
+header{
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+  z-index: 5;
+
+}
+
+ header .content {
+    display: flex;
+    align-items: center;
+    line-height: 64px;
+
+  }
+
+  header .logo {
+    flex: 1;
+    font-size: 1.5rem;
+    margin-left: 24px;
+    font-weight: bold;
+  }
+
+  .logo img{
+    width: 30px;
+  }
+
+  header .logo .lightblack {
+    color: black;
+    font-style: bold;
+  }
+
+  header .logo .lightgrey {
+    color: grey;
+    font-weight: lighter;
+  }
+
+  header nav ul {
+    display: flex;
+
+  }
+
+  nav li {
+    padding-left: 3.5rem;
+  }
+
+  nav a {
+    vertical-align: center;
+    font-size: 1rem;
+    color: #444444;
+  }
+
+.mobilenav{
+  display: none;
+}
+
+
+/*mobile*/
+
+/*-----------------*main content*-----------------------*/
+
+/*desktop*/
+
+
+
+
+/*mobile*/
+
+
+/*-----------------footer-----------------------*/
+
+/*desktop*/
+
+
+
+
+/*mobile*/
