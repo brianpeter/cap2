@@ -24,8 +24,8 @@ html {
 }
 
 .button:hover{
-  background-color: #4a4a44;
-}*/
+  background-color: #4a4a4a;
+}
 
 h2{
   font-weight: bold;
@@ -415,39 +415,37 @@ header{
 /*mobile*/
 @media only screen and (max-width: 480px) {
 
-#startlearning{
-  background-color: white;
-  padding: 0 1rem 2rem 1rem;
-}
-
-#startlearning .center h2{
-  background-color: white;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-#startlearning .classes{
-    display: none;
+  #startlearning{
+    background-color: white;
+    padding: 0 1rem 2rem 1rem;
   }
-#startlearning .mobile{
-  display: flex;
-}
 
+  #startlearning .center h2{
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
-#startlearning .contentcolumn{
+  #startlearning .classes{
+      display: none;
+    }
+  #startlearning .mobile{
+    display: flex;
+  }
+
+  #startlearning .contentcolumn{
     margin: 0 0 0 0;
     padding-right: 0;
     padding-top: 0;
     width: 100%
-
   }
 
-#startlearning .mobile .contentcolumn h3{
-  background-color: #D6D6D6;
-  padding: 1rem 0 1rem 1rem;
-  margin-bottom: .5rem;
-  margin-top: 0;
-}
+  #startlearning .mobile .contentcolumn h3{
+    background-color: #D6D6D6;
+    padding: 1rem 0 1rem 1rem;
+    margin-bottom: .5rem;
+    margin-top: 0;
+  }
 
 }
 
@@ -536,6 +534,9 @@ footer .copyright {
 footer nav ul{
   display: flex;
 }
+
+/*mobile*/
+
 @media only screen and (max-width: 480px) {
 
   footer{
@@ -551,7 +552,3 @@ footer nav ul{
     display: none;
   }
 }
-
-
-
-/*mobile*/
