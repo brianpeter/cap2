@@ -4,6 +4,8 @@
 html {
   font-family: "roboto", sans-serif;
   font-size: 16px;
+  color: #4E4E4E
+
 }
 
 .content.left {
@@ -11,26 +13,68 @@ html {
 }
 
 .button {
-  border-radius: 4px;
-  background-color: #4a4a4a;
+  display: flex;
+  border-radius: .25rem;
+  background-color: #4E4E4E;
   color: white;
+  justify-content: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: 2rem;
 }
 
-h2,
+.button:hover{
+  background-color: #4a4a44;
+}*/
+
+h2{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 h3{
   font-weight: bold;
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1.1rem;
 }
 
 
+.image-container {
+  overflow: hidden;
+}
+
+.contentcolumn{
+  padding: 1rem 1rem 1rem 0;
+}
+
+.contentcolumn .csmall{
+  display: flex;
+}
+
+.csmall img{
+  width: 30%;
+  height: 30%;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.csmall{
+  align-items: center;
+}
+
+.darkgrey {
+  display: none;
+}
 /*mobile*/
 
 /*-----------------*header*-----------------------*/
 
 /*desktop*/
 header{
-  position: fixed;
+  display: block;
   width: 100%;
-  border-bottom: solid 1px #c6c1c1;
   background-color: white;
   z-index: 5;
 
@@ -39,44 +83,50 @@ header{
  header .content {
     display: flex;
     align-items: center;
-    line-height: 64px;
+    line-height: 4rem;
 
   }
 
   header .logo {
     flex: 1;
     font-size: 1.5rem;
-    margin-left: 24px;
+    margin-left: 1.5rem;
     font-weight: bold;
   }
 
   .logo img{
-    width: 30px;
+    width: 4rem;
   }
 
   header .logo .lightblack {
-    color: black;
+    color: #4E4E4E;
+    font-family: 'ubuntu';
     font-style: bold;
+    font-size: 2rem;
+
   }
 
   header .logo .lightgrey {
-    color: grey;
+    color: #ACACAC;
+    font-family: 'ubuntu';
     font-weight: lighter;
+    font-size: 2rem;
   }
 
   header nav ul {
     display: flex;
-
   }
 
   nav li {
-    padding-left: 3.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+
   }
 
   nav a {
     vertical-align: center;
-    font-size: 1rem;
-    color: #444444;
+    font-size: 1.5rem;
+    color: #4E4E4E;
   }
 
 .mobilenav{
@@ -86,20 +136,421 @@ header{
 
 /*mobile*/
 
+@media only screen and (max-width: 480px) {
+  .logo{
+    display: none;
+  }
+
+  .desktopnav{
+    display: none;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobilenav{
+    display: flex;
+
+  }
+
+  nav li {
+    display: flex;
+    padding-left: 2.5em;
+    padding-right: 2.5rem;
+
+  }
+
+  nav a {
+    vertical-align: center;
+  }
+
+  nav img {
+    width: 2.5rem;
+
+  }
+}
+
 /*-----------------*main content*-----------------------*/
 
 /*desktop*/
 
+/*-----------------*section 1*-----------------------*/
+
+#learnsomething{
+  display: flex;
+  align-items: center;
+  background-color: #D6D6D6;
+  width: 100%;
+  padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+#learnsomething img{
+  width: 60%;
+  margin-right: 2.5rem;
+}
+
+.learn{
+  width: 30%;
+}
+
+.learn h2, h3{
+  font-style: bold;
+
+}
+
+.learn h2{
+  font-size: 3rem;
+  font-weight: bold;
+
+}
+
+.learn h3{
+  font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .darkgrey{
+    display: flex;
+    background-color: darkgrey;
+    height: 11.25rem;
+  }
+
+  #learnsomething img{
+    display: none;
+  }
+
+  #learnsomething{
+    display: flex;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .learn{
+    width: 100%;
+  }
+
+  .learn h2{
+    margin-bottom: 2rem;
+  }
+
+  .learn h3{
+    margin-bottom: 1.5rem;
+  }
+
+  .button{
+    background-color: darkgrey;
+
+  }
+}
+
+/*-----------------*section 2*-----------------------*/
+
+#practicing{
+  display: flex;
+}
+
+.practice{
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  width: 66.75%;
+}
+
+.practice img{
+  width: 100%;
+}
+
+.practice h2{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.practice p, span{
+  font-size: 1.1rem;
+}
+
+#practicing img.mobile{
+  display: none;
+}
+
+#practicing .csmall:last-child{
+  background-color: #D6D6D6;
+}
+
+
+.descrip h3, p {
+  margin-bottom: .5rem;
+}
+
+.descrip .mobile h3{
+  display: none;
+}
+
+.descrip h3{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.descrip p {
+  font-size: 1.1rem;
+}
+
+
+/*mobile*/
+
+@media only screen and (max-width: 480px) {
+  .practice{
+    display: none;
+  }
+
+  .contentcolumn{
+    margin: 0 0 0 0;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .contentcolumn .csmall{
+    display: flex;
+    flex-flow: column;
+  }
+
+  #practicing .csmall:last-child{
+    background-color: white;
+  }
+
+  #practicing img.desktop{
+    display: none;
+  }
+
+  #practicing img.mobile{
+    display: flex;
+    width: 100%;
+  }
+
+  .csmall img{
+    padding: 0 0 0 0;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .csmall{
+    align-items: flex-start;
+  }
+
+  .csmall .descrip{
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 0 1rem;
+  }
+
+  .descrip .desk h3{
+    display: none;
+  }
+
+  .descrip .mobile h3{
+    display: flex;
+  }
+  .csmall .descrip h3{
+    font-size: 2rem;
+  }
+}
+/*-----------------*section 3*-----------------------*/
+
+#startlearning{
+  background-color: #D6D6D6;
+  padding: 2rem 4rem 2rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#startlearning .center h2{
+  display: flex;
+  background-color: #D6D6D6;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#startlearning .classes {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+#startlearning .classes .group {
+  display: flex;
+  flex-flow: wrap row;
+}
+
+#startlearning .wrapcontent{
+  display: flex;
+  flex: 1;
+  flex-flow: wrap column;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: white;
+  width: 400px;
+}
+
+.fullimage-container img{
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapcontent .content{
+  background-color: white;
+  overflow: hidden;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.wrapcontent .content p{
+  margin-top: .5rem;
+}
+
+#startlearning .mobile{
+  display: none;
+}
+
+/*mobile*/
+@media only screen and (max-width: 480px) {
+
+#startlearning{
+  background-color: white;
+  padding: 0 1rem 2rem 1rem;
+}
+
+#startlearning .center h2{
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#startlearning .classes{
+    display: none;
+  }
+#startlearning .mobile{
+  display: flex;
+}
+
+
+#startlearning .contentcolumn{
+    margin: 0 0 0 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 100%
+
+  }
+
+#startlearning .mobile .contentcolumn h3{
+  background-color: #D6D6D6;
+  padding: 1rem 0 1rem 1rem;
+  margin-bottom: .5rem;
+  margin-top: 0;
+}
+
+}
+
+/*-----------------*section 4*-----------------------*/
+
+
+/*desktop*/
+
+#thesis .center h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thesiscontainer{
+  display: flex;
+}
+
+.thesis1{
+  padding: 0 1rem 1.5rem 1.5rem;
+  width: 60%;
+}
+
+.thesis1 video{
+  width: 100%;
+}
+
+#thesis .contentcolumn{
+  padding: 0 1rem 1rem 0;
+}
+
+#thesis .csmall:first-child{
+  background-color: #D6D6D6;
+}
+
+#thesis .csmall{
+
+}
 
 
 
 /*mobile*/
 
+@media only screen and (max-width: 480px) {
+
+  #thesis .contentcolumn{
+    display: none;
+  }
+
+  #thesis .thesis1{
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+  }
+
+  #thesis .thesis1 h3{
+    display: none;
+  }
+
+  #thesis .thesis1 p{
+    display: none;
+  }
+
+}
+
+
 
 /*-----------------footer-----------------------*/
 
 /*desktop*/
+footer {
+  border-top: 1px solid #E2E2E2;
+  padding: 1.5rem 2rem;
+}
 
+footer .content {
+  display: flex;
+  font-size: 1rem;
+}
+
+footer .copyright {
+  margin-left: 1.5rem;
+  flex-grow: 1;
+}
+
+footer nav ul{
+  display: flex;
+}
+@media only screen and (max-width: 480px) {
+
+  footer{
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  footer .content {
+    font-size: .625rem;
+  }
+
+
+  .footnav{
+    display: none;
+  }
+}
 
 
 
